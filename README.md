@@ -1,5 +1,5 @@
 # Coronavirus-Raman
-This database include the code and the data that support the findings of *Rapid classification of coronaviruses by Raman spectroscopy based on deep learning*.  
+This database include the code and the data that support the findings of ***Rapid classification of coronaviruses by Raman spectroscopy based on deep learning***.  
   
 ## Code
 In /Code/, Python scripts are available to train and classify coronavirus Raman spectral datasets using MLP, CNN, and ResNet models.  
