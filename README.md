@@ -1,5 +1,11 @@
 # Coronavirus-Raman
 This database include the code and the data that support the findings of ***Rapid classification of coronaviruses by Raman spectroscopy based on deep learning***.  
+
+Author: Wenbo Mo
+E-mail: mwb19@mails.tsinghua.edu.cn
+Department of Engineering Physics
+Tsinghua University
+Beijing, China
   
 ## Code
 In /Code/, Python scripts are available to train and classify coronavirus Raman spectral datasets using MLP, CNN, and ResNet models.  
