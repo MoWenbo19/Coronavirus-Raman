@@ -8,7 +8,7 @@ Tsinghua University
 Beijing, China  
   
 ## Code
-In /Code/, Python scripts are available to train and classify coronavirus Raman spectral datasets using MLP, CNN, and ResNet models.  
+In /Code/, Python scripts are available to train and classify coronavirus Raman spectral datasets using MLP, CNN, and ResNet models. The code has been tested with Python 3.8.3 and Tensorflow 2.4.1 on a Windows 10 Computer.  
   
 ## Data
 In /Data/, Data is packaged according to 3-class identification task and 5-class task.   
