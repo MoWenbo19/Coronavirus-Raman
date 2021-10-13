@@ -9,10 +9,6 @@ import tensorflow as tf
 import tensorflow.keras as keras
 import tensorflow.keras.layers as layers
 import os
-import csv
-import sys
-import random
-import math
 
 # data set path defination
 data_path_Train = 'D:\\Data\\5-class'
@@ -44,12 +40,11 @@ HSample = 0
 OSample = 0
 # load all file in this path
 for foldername in os.listdir(data_path_Train):
-	for filename in os.listdir(data_path_Train+'\\'+foldername+'\\Txt'):
+	for filename in os.listdir(data_path_Train+'\\'+foldername):
 		file_count = file_count+1
-		# print('load train file:',data_path_Train+'\\'+foldername+'\\Txt\\'+filename,file_count)
 		# load data
-		wavenumber = np.loadtxt(data_path_Train+'\\'+foldername+'\\Txt\\'+filename)[0]
-		data = np.loadtxt(data_path_Train+'\\'+foldername+'\\Txt\\'+filename)[1:]
+		wavenumber = np.loadtxt(data_path_Train+'\\'+foldername+'\\'+filename)[0]
+		data = np.loadtxt(data_path_Train+'\\'+foldername+'\\'+filename)[1:]
 		for i,line in enumerate(data):
 			line = (line-min(line))/(max(line)-min(line))
 			# add data to train list
