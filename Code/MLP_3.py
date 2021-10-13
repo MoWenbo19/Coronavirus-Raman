@@ -9,10 +9,6 @@ import tensorflow as tf
 import tensorflow.keras as keras
 import tensorflow.keras.layers as layers
 import os
-import csv
-import sys
-import random
-import math
 
 # data set path defination
 data_path_Train = 'D:\\Data\\3-class'
@@ -40,7 +36,6 @@ SCSample = 0
 for foldername in os.listdir(data_path_Train):
 	for filename in os.listdir(data_path_Train+'\\'+foldername):
 		file_count = file_count+1
-		# print('load train file:',data_path_Train+'\\'+foldername+'\\Txt\\'+filename,file_count)
 		# load data
 		wavenumber = np.loadtxt(data_path_Train+'\\'+foldername+'\\'+filename)[0]
 		data = np.loadtxt(data_path_Train+'\\'+foldername+'\\'+filename)[1:]
